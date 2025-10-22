@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alien Immigration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🛸 Alien Immigration Portal</h1>
+    <form id="alienForm">
+        <label>Planet Name:</label>
+        <input type="text" id="planet" placeholder="Ex: Alien3"><br>
+        <span class="error" id="planetError"></span><br>
+        <label>Antenna Count:</label>
+        <input type="number" id="antenna" placeholder="Even Numbers only"><br>
+        <span class="error" id="antennaError"></span><br>
+        <label>Alien ID:</label>
+        <input type="text" id="alienID" placeholder="ZOR-XY_9999@UFO"><br>
+        <span class="error" id="alienIDError"></span><br>
+        <label>Favorite Human Phrase:</label>
+        <input type="text" id="phrase" placeholder="Hello 🙌 🌍"><br>
+        <span class="error" id="phraseError"></span><br>
+        <label>Landing Date:</label>
+        <input type="date" id="landingDate"><br><br>
+        <span class="error" id="landingDateError"></span><br><br>
+        <label>Upload Alien Photo</label>
+        <input type="file" id="alienPhoto" accept="image/*"><br>
+        <span class="error" id="photoError"></span><br>
+        <label>ID Proof:</label>
+        <input type="file" id="idProof" accept="pdf,image/*"><br>
+        <span class="error" id="idProofError"></span><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="Script.js"></script>
+</body>
+</html>

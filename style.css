@@ -1,0 +1,81 @@
+body{
+  background: url('Alien.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #6c7c7b;
+  font-family: 'Orbitron', 'Courier New', monospace;
+  text-align: center;
+  padding: 40px;
+}
+h1{
+  color: #08050a;
+  text-shadow: 0 0 10px #00ffee, 0 0 20px #8c00ff;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+form{
+  display: inline-block;
+  text-align: left;
+  border: 2px solid #00ffee;
+  border-radius: 15px;
+  padding: 25px 30px;
+  background: rgba(10, 10, 25, 0.8);
+  box-shadow: 0 0 25px #00ffee, inset 0 0 20px #8c00ff;
+  width: 420px;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #b7bfff;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"] ,
+input[type="file"]{
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #00ffee;
+  background: rgba(0, 0, 0, 0.5);
+  color: #00ffee;
+  box-shadow: 0 0 8px #00ffee;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+input:focus{
+  box-shadow: 0 0 15px #8c00ff, 0 0 25px #00ffee;
+}
+input[type="file"]{
+  padding:6px;
+  cursor:pointer;
+}
+button{
+  width: 100%;
+  background: linear-gradient(90deg, #00ffee, #8c00ff);
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffee;
+  transition: 0.3s;
+}
+button:hover{
+  background: linear-gradient(90deg, #8c00ff, #00ffee);
+  box-shadow: 0 0 25px #8c00ff, 0 0 40px #00ffee;
+}
+.error{
+    display:block;
+    color:#ff0080;
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff0080;
+    animation: flicker 1.2s infinite alternate;
+}
+@keyframes flicker {
+  from { opacity: 1; }
+  to { opacity: 0.6; }
+}
+
